@@ -1,5 +1,5 @@
 <?php
-
+// use App\setting;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -12,7 +12,12 @@
 */
 
 Route::get('/', function () {
+    // return bcrypt('bhushan');
     return view('welcome');
+});
+
+Route::get('/setting', function(){
+    return ('test' .'123');
 });
 
 Auth::routes();
